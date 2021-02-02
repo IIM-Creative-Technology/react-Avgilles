@@ -1,0 +1,31 @@
+// font variable //
+
+
+$titleFont : 'SF Pro Display';
+$contentFont: 'SF Pro Text';
+
+$bold : 700;
+$normal: 400;
+
+$sizeH: 32px;
+
+// import font //
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../../fonts/FontsFree-Net-SFProDisplay-Regular.eot');
+    src: url('../../fonts/FontsFree-Net-SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/FontsFree-Net-SFProDisplay-Regular.woff2') format('woff2'),
+         url('../../fonts/SFProDisplay-Regular.woff') format('woff'),
+         url('../../fonts/SFProDisplay-Regular.ttf')  format('truetype'),
+         url('../../fonts/SFProDisplay-Regular.svg') format('svg'); 
+  }
+  @font-face {
+    font-family: 'SF Pro Text';
+    src: url('../../fonts/FontsFree-Net-SFProText-Regular.eot');
+    src: url('../../fonts/FontsFree-Net-SFProText-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/FontsFree-Net-SFProText-Regular.woff2') format('woff2'),
+         url('../../fonts/SFProText-Regular.woff') format('woff'),
+         url('../../fonts/SFProText-Regular.ttf')  format('truetype'),
+         url('../../fonts/SFProText-Regular.svg') format('svg'); 
+  }

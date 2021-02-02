@@ -1,7 +1,6 @@
 import logo from './images/logo.svg';
-import './App.css';
 import AllQuizz from './routes/Routeur';
-
+import './sass/helpers/global.scss';
 
 function App() {
   return (

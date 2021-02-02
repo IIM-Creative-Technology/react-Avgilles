@@ -43,6 +43,9 @@ export default function AllQuizz() {
             <Route path="/dashboard">
                 <Cards />
             </Route>
+            <Route path="*">
+                <h2>404</h2>
+            </Route>
           </Switch>
         </div>
       </Router>
