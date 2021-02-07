@@ -1,21 +1,50 @@
 @import '../variables/colors';
 
-.cards{
-    border:solid 2px $colorMtxt;
-    padding: 8px;
-    box-shadow: 12px 12px 2px 1px $secondColor;
-    transition: 0.5s;
+fieldset {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+
+    label{
+    background-color: $colorMtxt;
+    padding: 8px;
+    color: black;
+    flex: 1 0 33%; 
+    margin: 8px;
+    border: thick double transparent;
+    box-sizing: border-box;
+
+
+    
+    // box-shadow: 12px 12px 2px 1px $secondColor;
+    transition: 0.5s;
+    }
+    .Valid::after{
+        content: "✅";
+        font-size: 18px;
+        line-height: 0rem;
+        margin: 4px 0px 0px -8px;
+        display: none;
+    }
+
+    label:hover{
+        cursor: pointer;
+        border:thick double #32a1ce;;
+    }
     img{
         max-width: 300px;
         max-height: 240px;
         overflow: hidden;
     }
-    
+
+     
 }
 
-.cards:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-
-}
+button{
+    background-color: $colorMtxt;
+    padding: 8px;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 8px;
+    }
