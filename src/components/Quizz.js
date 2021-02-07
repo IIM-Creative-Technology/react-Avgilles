@@ -24,7 +24,7 @@ const QuizzQuestions = React.memo((props, checked, onchange) => {
                         return (
                             <>
                                 <label >
-                                    <input onClick={() => (value === data.correct) ? (setCount(count + 1)):setCount(count - 1)}
+                                    <input onClick={() => (value === data.correct) ? (setCount(count + 1)):""}
                                      className={(value === data.correct) ? "radioButton Valid": "radioButton" } type="radio" 
                                      id={"answers_"+ data.id +"_"+i} name={"answers_"+ data.id}
                                      value={value}></input>
@@ -54,14 +54,11 @@ function ShowResult() {
 
 
 const Quizz = (props) => {
-    const { infoData } = props;
-
-    const [question, setQuestions] = useState([]);
-    useEffect(()=>{
-        setQuestions(infoData)
-    })
+    const { infoData, titleTheme } = props;
+    
         return(
             <section border="1" align="center">
+                <h2>{titleTheme}</h2>
                 <QuizzQuestions infoData={infoData} />
                 <hr/>
                 <button onClick={ShowResult}>Voir mon score</button>

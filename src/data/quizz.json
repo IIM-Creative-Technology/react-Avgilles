@@ -1,22 +1,96 @@
-[
+{
+    
+    "Quizz_1":[
         {
-            "title": "Yanis",
-            "job": "Dev",
-            "email": "test@gmail.com"
+            "id": 1,
+            "question": "Quel est la capitale de la Norvège ?",
+            "answers": ["Oslo", "Paris", "Tokyo", "Londres"],
+            "correct": "Oslo"
+    
         },
         {
-            "title": "Lorem",
-            "job": "Designer",
-            "email": "lorem@orange.fr"
+            "id":2 ,
+            "question": "Combien il y a t-il d'îles en Indonésie ?",
+            "answers": ["1656", "850", "15", "réponse D"],
+            "correct": "1656"
+    
         },
         {
-            "title": "Ipsum",
-            "job": "DevOps",
-            "email": "ipsum@free.fr"
-        },
-        {
-            "title": "Delta",
-            "job": "Prof",
-            "email": "charlie@delta.com"
+            "id":3,
+            "question": "Combien d'habitant en France ?",
+            "answers": ["+ 75 millions", "+ 100 millions", "- de 70 millions", "30 millions"],
+            "correct": "+ 75 millions"
+    
         }
-]
+    ],
+    "Quizz_2":[
+        {
+            "id": 1,
+            "question": "Quel peintre a réalisé la ''Joconde'' ?",
+            "answers": ["Léonard de Vinci", "Picasso", "Van gogh", "Monet"],
+            "correct": "Léonard de Vinci"
+    
+        },
+        {
+            "id":2 ,
+            "question": "Quel est le plus grand oiseaux ?",
+            "answers": ["L'albatros", "L'aigle royal", "L'autruche", "Le colibri"],
+            "correct": "L'albatros"
+    
+        },
+        {
+            "id":3,
+            "question": "Combien le dernier Iphone (iphone 12 pro) ?",
+            "answers": ["Android c'est mieux", "1800€", "1300€", "800€"],
+            "correct": "Android c'est mieux"
+    
+        }
+    ],
+    "Quizz_3":[
+        {
+            "id": 1,
+            "question": "Dans quel pays ce sont déroullé les JO 2012",
+            "answers": ["Londres", "Paris", "Tokyo", "Mexico"],
+            "correct": "Londres"
+    
+        },
+        {
+            "id":2 ,
+            "question": "Quand Facebook à-t'il été créer ?",
+            "answers": ["1656", "850", "15", "réponse D"],
+            "correct": "1656"
+    
+        },
+        {
+            "id":3 ,
+            "question": "Combien faut-il de minutes pour faire cuire un oeuf dure ?",
+            "answers": ["8min-10min", "15min-20min", "30s", "- de 3min"],
+            "correct": "8min-10min"
+        }
+    ],
+    "Quizz_4":[
+
+        {
+            "id": 1,
+            "question": "Dans quel film un rat a fait de la cuisine ?",
+            "answers": ["Ratatouille", "Charlie et la Chocolaterie", "Le Dinée de con", "L'Aile ou la Cuisse"],
+            "correct": "Ratatouille"
+    
+        },
+        {
+            "id":2 ,
+            "question": "Quel est le film le plus cher au monde ?",
+            "answers": ["Pirates des Caraïbes 4", "Avengers: Endgame", "Titanic", "Justice League"],
+            "correct": "Pirates des Caraïbes 4"
+    
+        },
+        {
+            "id":3,
+            "question": "Quel est le patronus de professeur Rogues ?",
+            "answers": ["Une Biche", "Un serpent", "Un lion", "Une taupe"],
+            "correct": "Une Biche"
+    
+        }
+    ]
+}
+

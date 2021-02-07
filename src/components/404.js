@@ -1,10 +1,5 @@
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
 import '../sass/component/_404.scss';
+import Gif404 from '../images/404.gif';
 
 
 export default function ErrPage() {
@@ -13,10 +8,8 @@ export default function ErrPage() {
     <>
         <section className="errpage">
             <h3>Erreur 404</h3>
+            <img src={Gif404}></img>
         </section>
-        <li>
-            <Link to="/">Home</Link>
-        </li>
     </>
 
     );

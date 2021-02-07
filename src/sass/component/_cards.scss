@@ -1,6 +1,14 @@
+
+
 @import '../variables/colors';
 
 fieldset {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -27,6 +35,19 @@ fieldset {
         margin: 4px 0px 0px -8px;
         display: none;
     }
+    .Valid_1::after{
+        @extend .Valid::after;
+    }
+    .Valid_2::after{
+        @extend .Valid::after;
+    }
+    .Valid_3::after{
+        @extend .Valid::after;
+    }
+    .Valid_4::after{
+        @extend .Valid::after;
+    }
+
 
     label:hover{
         cursor: pointer;
@@ -37,7 +58,6 @@ fieldset {
         max-height: 240px;
         overflow: hidden;
     }
-
      
 }
 
@@ -48,3 +68,6 @@ button{
     font-size: 18px;
     margin-bottom: 8px;
     }
+h2.mb-2 {
+    margin-bottom: 32px;
+}

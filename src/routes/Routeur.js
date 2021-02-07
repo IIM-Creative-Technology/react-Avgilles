@@ -7,31 +7,12 @@ import {
 } from "react-router-dom";
 import Days from '../components/Prevision'
 import ErrPage from '../components/404';
-// import Cards from '../components/Card';
-
 
 import Quizz from '../components/Quizz';
-import dataQ1 from '../data/Quizz_1.json';
 import '../sass/component/_cards.scss';
 import '../sass/component/_nav.scss';
 
-
-
-
-// const Listequizz = (props) => {
-//   const titlequizz = props.infoData.map((data, index) => {
-//       return(
-//           <section className="cards" key={index}>
-//                <Link to={"/quizz/"+data.title}>{data.title}</Link>
-
-//                <Route path={"quizz/"+data.title} component={Quizz}></Route>
-//           </section>
-//       );
-//   });
-
-//   return <section>{titlequizz}</section>;
-// }
-
+import dataQ from '../data/Quizz.json';
 
 
 export default function AllQuizz() {
@@ -52,12 +33,18 @@ export default function AllQuizz() {
                   <Days/>             
               </Route>
               <Route path="/quizz_1">
-                {console.log(dataQ1.Quizz_1.length, "dataQ1")}
-                <Quizz infoData={dataQ1.Quizz_1}/>
+                <Quizz  nq="1" infoData={dataQ.Quizz_1} titleTheme="Quizz N°1: Culture Géographique"/>
+                {console.log(dataQ)}
               </Route>
-              <Route path="/quizz_2"/>
-              <Route path="/quizz_3"/>
-              <Route path="/quizz_4"/>
+              <Route path="/quizz_2">
+                <Quizz  nq="2" infoData={dataQ.Quizz_2} titleTheme="Quizz N°2: Culture Générale"/>
+              </Route>
+              <Route path="/quizz_3">
+               <Quizz  nq="3" infoData={dataQ.Quizz_3} titleTheme="Quizz N°3: Culture Générale"/>
+              </Route>
+              <Route path="/quizz_4">
+               <Quizz nq="4" infoData={dataQ.Quizz_4} titleTheme="Quizz N°4: Culture Cinématographique"/>
+              </Route>
 
               <Route path="*" component={ErrPage}></Route>
 
