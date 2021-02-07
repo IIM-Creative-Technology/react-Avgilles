@@ -1,0 +1,73 @@
+
+
+@import '../variables/colors';
+
+fieldset {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    label{
+    background-color: $colorMtxt;
+    padding: 8px;
+    color: black;
+    flex: 1 0 33%; 
+    margin: 8px;
+    border: thick double transparent;
+    box-sizing: border-box;
+
+
+    
+    // box-shadow: 12px 12px 2px 1px $secondColor;
+    transition: 0.5s;
+    }
+    .Valid::after{
+        content: "✅";
+        font-size: 18px;
+        line-height: 0rem;
+        margin: 4px 0px 0px -8px;
+        display: none;
+    }
+    .Valid_1::after{
+        @extend .Valid::after;
+    }
+    .Valid_2::after{
+        @extend .Valid::after;
+    }
+    .Valid_3::after{
+        @extend .Valid::after;
+    }
+    .Valid_4::after{
+        @extend .Valid::after;
+    }
+
+
+    label:hover{
+        cursor: pointer;
+        border:thick double #32a1ce;;
+    }
+    img{
+        max-width: 300px;
+        max-height: 240px;
+        overflow: hidden;
+    }
+     
+}
+
+button{
+    background-color: $colorMtxt;
+    padding: 8px;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 8px;
+    }
+h2.mb-2 {
+    margin-bottom: 32px;
+}
