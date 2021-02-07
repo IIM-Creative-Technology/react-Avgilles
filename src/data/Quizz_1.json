@@ -1,0 +1,27 @@
+{
+    
+    "Quizz_1":[
+        {
+            "id": 1,
+            "question": "Quel est la capitale de la Norvège ?",
+            "answers": ["Oslo", "Paris", "Tokyo", "Londre"],
+            "correct": "Oslo"
+    
+        },
+        {
+            "id":2 ,
+            "question": "Combien il y a t-il d'îles en Indonésie ?",
+            "answers": ["1656", "850", "15", "réponse D"],
+            "correct": "1656"
+    
+        },
+        {
+            "id":3,
+            "question": "Combien d'habitant en France ?",
+            "answers": ["+ 75 millions", "+ 100 millions", "- de 70 millions", "30 millions"],
+            "correct": "+ 75 million"
+    
+        }
+    ]
+}
+

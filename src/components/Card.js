@@ -1,9 +1,22 @@
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+import '../sass/component/_cards.scss';
 
 
-export default function Cards() {
-    return (
-      <div>
-        <h2>Cards</h2>
-      </div>
-    );
-  }
+const Cards = (props) => {
+    const { infoData } = props;
+        return(
+            <>
+                <Listequizz infoData={Data} />
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+            </>
+        )
+    }
+
+export default Cards;

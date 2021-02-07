@@ -1,0 +1,21 @@
+@import '../variables/colors';
+
+.cards{
+    border:solid 2px $colorMtxt;
+    padding: 8px;
+    box-shadow: 12px 12px 2px 1px $secondColor;
+    transition: 0.5s;
+
+    img{
+        max-width: 300px;
+        max-height: 240px;
+        overflow: hidden;
+    }
+    
+}
+
+.cards:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+
+}

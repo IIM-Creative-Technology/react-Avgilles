@@ -1,0 +1,25 @@
+@import '../variables/colors';
+@import '../variables/fonts';
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: $secondColor;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    border-right: 2px solid $colorMtxt ;
+    
+
+
+    a{
+        color: white;
+        padding: 16px 16px 16px 8px;
+        text-decoration: none;
+        font-family: $titleFont;
+        font-size: $sizeH ;
+    }
+}

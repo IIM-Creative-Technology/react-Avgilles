@@ -6,45 +6,62 @@ import {
   Link
 } from "react-router-dom";
 import Days from '../components/Prevision'
+import ErrPage from '../components/404';
+// import Cards from '../components/Card';
 
-import Cards from '../components/Card';
+
+import Quizz from '../components/Quizz';
+import dataQ1 from '../data/Quizz_1.json';
+import '../sass/component/_cards.scss';
+import '../sass/component/_nav.scss';
+
+
+
+
+// const Listequizz = (props) => {
+//   const titlequizz = props.infoData.map((data, index) => {
+//       return(
+//           <section className="cards" key={index}>
+//                <Link to={"/quizz/"+data.title}>{data.title}</Link>
+
+//                <Route path={"quizz/"+data.title} component={Quizz}></Route>
+//           </section>
+//       );
+//   });
+
+//   return <section>{titlequizz}</section>;
+// }
+
+
 
 export default function AllQuizz() {
     return (
       <Router>
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <Days/>
-                <ul>
-                  <li>
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/dashboard">Dashboard</Link>
-                  </li>
-              </ul>
-            </Route>
-            <Route path="/about">
-                <h2>about</h2>
-                <li>
-                    <Link to="/">Home</Link>
-                  </li>
-            </Route>
-            <Route path="/dashboard">
-                <Cards />
-                <li>
-                    <Link to="/">Home</Link>
-                  </li>
-            </Route>
-            <Route path="*">
-                <h2>404</h2>
 
+            <nav className="nav">
                 <Link to="/">Home</Link>
-            </Route>
-          </Switch>
+                <Link to="/quizz_1">Quizz 1</Link>
+                <Link to="/quizz_2">Quizz 2</Link>
+                <Link to="/quizz_3">Quizz 3</Link>
+                <Link to="/quizz_4">Quizz 4</Link>
 
-        </div>
+            </nav>
+            <Switch>
+
+              <Route exact path="/">
+                  <Days/>             
+              </Route>
+              <Route path="/quizz_1">
+                {console.log(dataQ1.Quizz_1.length, "dataQ1")}
+                <Quizz infoData={dataQ1.Quizz_1}/>
+              </Route>
+              <Route path="/quizz_2"/>
+              <Route path="/quizz_3"/>
+              <Route path="/quizz_4"/>
+
+              <Route path="*" component={ErrPage}></Route>
+
+          </Switch>
       </Router>
     );
   }

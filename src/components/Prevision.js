@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import '../sass/component/_prev.scss'
 
 export default function Days(props) {
 
@@ -72,7 +73,7 @@ export default function Days(props) {
 
 
     return (
-        <section>
+        <section className="prevSection">
             <h2>{fullDate}</h2>
                 <img
                 style={{
@@ -82,7 +83,7 @@ export default function Days(props) {
                 src={`http://openweathermap.org/img/wn/${img}@2x.png`}                      
                         />
             <h2>{heures}h{minutes}</h2>
-            <p>Il fait actuellement {temp} %</p>
+            <p>Il fait actuellement {temp}°C</p>
             <p>{meteoDesc} à {city}.</p>
         </section>
     );
